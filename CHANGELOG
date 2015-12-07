@@ -1,11 +1,17 @@
-commit 390d9b36bc6ad3ca0dd83548acdcbe95edbcd1bb
-Author: Tomas Michalek <tomas.michalek.st@vsb.cz>
-Date:   Mon Dec 7 21:25:10 2015 +0100
-
-    Licence to edited ICS
-
-commit 548dd62a676109b0f7caa6ce07f7c2db16c89ca4
-Author: Tomas Michalek <tomas.michalek.st@vsb.cz>
-Date:   Mon Dec 7 21:08:29 2015 +0100
-
-    Initial Commit 0.1
+* [33mcommit f10ae62[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+[31m|[m Author: Tomas Michalek <tomas.michalek.st@vsb.cz>
+[31m|[m Date:   Mon Dec 7 21:35:49 2015 +0100
+[31m|[m 
+[31m|[m     Added Changelog file to keep track of changes.
+[31m|[m  
+* [33mcommit 390d9b3[m
+[31m|[m Author: Tomas Michalek <tomas.michalek.st@vsb.cz>
+[31m|[m Date:   Mon Dec 7 21:25:10 2015 +0100
+[31m|[m 
+[31m|[m     Licence to edited ICS
+[31m|[m  
+* [33mcommit 548dd62[m
+  Author: Tomas Michalek <tomas.michalek.st@vsb.cz>
+  Date:   Mon Dec 7 21:08:29 2015 +0100
+  
+      Initial Commit 0.1
