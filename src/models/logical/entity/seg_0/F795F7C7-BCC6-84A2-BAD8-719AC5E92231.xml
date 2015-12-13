@@ -4,7 +4,7 @@
 <createdTime>2015-12-13 14:09:05 UTC</createdTime>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -14,19 +14,15 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
-<preferredAbbreviation>usr</preferredAbbreviation>
-<shortName>usr</shortName>
-<synonym>Users</synonym>
-<synonymToDisplay>users,members,players,admins</synonymToDisplay>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
 <Attribute name="u_id" id="72044D4E-9372-B9F9-48DF-991DC8E40DAB">
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 14:09:47 UTC</createdTime>
 <comment>Users primary key</comment>
-<commentInRDBMS>Primary key of &apos;USER&apos; table</commentInRDBMS>
+<commentInRDBMS>Primary key of &lt;USER&gt; table</commentInRDBMS>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,7 +36,7 @@
 <commentInRDBMS>Passwords are mandatory, no user can exist without password for security reasons.</commentInRDBMS>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -51,10 +47,10 @@
 <Attribute name="u_email" id="C2CAE03A-0DC8-3510-DF82-09DA347E852D">
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 14:12:19 UTC</createdTime>
-<commentInRDBMS>Uses common axiom, that user&apos;s email should not be longer than 255 characters.</commentInRDBMS>
+<commentInRDBMS>Uses common axiom, that user`s email should not be longer than 255 characters.</commentInRDBMS>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -68,7 +64,7 @@
 <commentInRDBMS>Shoud not by longer than 60 characters</commentInRDBMS>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -82,8 +78,9 @@
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 14:10:42 UTC</createdTime>
 <ownerDesignName>models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

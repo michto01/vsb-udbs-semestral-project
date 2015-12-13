@@ -1,0 +1,8 @@
+ALTER TABLE Journey ADD CONSTRAINT Journey_PK PRIMARY KEY CLUSTERED (j_id)
+WITH
+  (
+    ALLOW_PAGE_LOCKS = ON ,
+    ALLOW_ROW_LOCKS  = ON
+  )
+  ON "default"
+GO

@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="34E9FC14-48F3-CE99-DF25-B34B668C52F7" schemaObject="4BEB885E-1C27-39CC-ACD1-A1D4115360C3" name="World">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<generatorID>FE0800D1-66DD-12B7-56E1-38920E2B9A56</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDDLTransformationScript>true</useDDLTransformationScript>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="w_id" id="8B11A941-AA8B-AA18-126B-052309FDB637">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<generatorID>B3D10857-4312-9298-BE5D-5C0A29A24796</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="w_short_name" id="E3E8B5CC-2364-8974-43BB-AEEC911F6439">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<commentInRDBMS>ASCII short name for the server/world</commentInRDBMS>
+<generatorID>0FA84B7C-5C38-C028-4476-ACC681E01C80</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="w_fullname" id="69748970-23E4-D2D9-3405-4F7247800029">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<commentInRDBMS>We adhere old issue fix #3405 to trim name if longer then 255B to support some weird devices.</commentInRDBMS>
+<generatorID>89C17175-6973-EEB0-ACDE-F6566B41E9C7</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C6ACEB30-B468-BC75-1F90-69BE6F8CE796" name="World_PK">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<generatorID>5836F5EA-7AF7-02AA-D0B8-07BDE1D6915D</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B11A941-AA8B-AA18-126B-052309FDB637"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3525D2B3-B69B-8765-C87F-1B029C7C3B88" name="Users__World">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 17:10:57 UTC</createdTime>
+<generatorID>56BA3B51-346C-9D9E-0CE9-833151E555D1</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

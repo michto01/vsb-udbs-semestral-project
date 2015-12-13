@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5D589AEE-D216-4847-85D5-51809CB6B333" schemaObject="4BEB885E-1C27-39CC-ACD1-A1D4115360C3" name="User">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<generatorID>F795F7C7-BCC6-84A2-BAD8-719AC5E92231</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDDLTransformationScript>true</useDDLTransformationScript>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="u_id" id="7D94046F-624C-BCB4-C49E-7ED449B1B100">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<comment>Users primary key</comment>
+<commentInRDBMS>Primary key of &lt;USER&gt; table</commentInRDBMS>
+<generatorID>72044D4E-9372-B9F9-48DF-991DC8E40DAB</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="u_password" id="54ADE4FB-E7A6-90C8-5659-DF14BDF546A0">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<comment>Passwords are mandatory, no user can exist without password for security reasons.</comment>
+<commentInRDBMS>Passwords are mandatory, no user can exist without password for security reasons.</commentInRDBMS>
+<generatorID>0DD781E7-690A-4BF4-6CFE-5A27226A542B</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="u_email" id="0F3F8D1D-92E4-8B8F-55F3-70EA08FFE4BB">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<commentInRDBMS>Uses common axiom, that user`s email should not be longer than 255 characters.</commentInRDBMS>
+<generatorID>C2CAE03A-0DC8-3510-DF82-09DA347E852D</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="u_role_str" id="6F1AEBA5-EDC7-3480-12B2-271FB1FE97C4">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<commentInRDBMS>Shoud not by longer than 60 characters</commentInRDBMS>
+<generatorID>56BBEEDF-9C49-103F-2656-B3721BC6B29F</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 BYTE</dataTypeSize>
+<ownDataTypeParameters>60 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F407E168-C442-5285-5056-E773C018C25B" name="User_PK">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<generatorID>2C1AC0F8-7E74-99AB-AFF9-DD89A2F7E1EC</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D94046F-624C-BCB4-C49E-7ED449B1B100"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F2F67AF3-B8D4-ACCF-38A3-0833B7110A36" name="User_inventoryv1">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 17:10:57 UTC</createdTime>
+<generatorID>A990A6E0-1DF8-997D-00F9-A92F58425EE8</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="D86D2333-DCB6-610B-23EB-F3AB5E61EBB7" name="Users__Worldv1">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 17:10:57 UTC</createdTime>
+<generatorID>56BA3B51-346C-9D9E-0CE9-833151E555D1</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

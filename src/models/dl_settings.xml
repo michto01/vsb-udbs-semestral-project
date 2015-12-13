@@ -8,6 +8,8 @@
 	<use_global_design_level_settings value="false" />
 	<use_preferred_classification_types value="false" />
 	<substitution_patterns>
+		<substitutions oldstring="->" newstring="_" selected="false" casesensitive="false" comments="" />
+		<substitutions oldstring="<->" newstring="_" selected="false" casesensitive="false" comments="" />
 	</substitution_patterns>
 	<classification_types>
 		<type name="Fact" color="-7482" fgcolor="-16776961" prefix="" id="1" preferred="false" >
@@ -389,7 +391,7 @@
 	<model_compare_storage_props_filter>
 	</model_compare_storage_props_filter>
 	<naming_options>
-		<model_options objectid="AA84929F-ABC0-F299-A601-E1325FDA9D01">
+		<model_options objectid="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53">
 			<naming_option class_name="oracle.dbtools.crest.model.design.relational.Table" max_name_length="30" case_type="2" valid_characters="" all_valid="true" />
 			<naming_option class_name="oracle.dbtools.crest.model.design.relational.Column" max_name_length="30" case_type="2" valid_characters="" all_valid="true" />
 			<naming_option class_name="oracle.dbtools.crest.model.design.relational.TableView" max_name_length="30" case_type="2" valid_characters="" all_valid="true" />

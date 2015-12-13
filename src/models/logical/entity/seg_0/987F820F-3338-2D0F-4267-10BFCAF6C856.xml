@@ -4,7 +4,7 @@
 <createdTime>2015-12-13 14:20:38 UTC</createdTime>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -14,15 +14,13 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
-<preferredAbbreviation>inv</preferredAbbreviation>
-<shortName>invertory</shortName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
 <Attribute name="i_id" id="01DC1F09-CBC3-2C34-0E11-9B13CD7EF6D5">
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 14:21:13 UTC</createdTime>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -35,7 +33,7 @@
 <commentInRDBMS>Names of items should be keept long to allow simpler search.</commentInRDBMS>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,10 +44,10 @@
 <Attribute name="i_type" id="2B0A9523-10DA-0F9B-2E1E-79DC4D94C45C">
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 14:22:45 UTC</createdTime>
-<commentInRDBMS>We only support fixed set of equipment and item types, thous we can use fixed smallint without accom. table with types, because as such we know them and only need to enumerate them. Also item can have no type indicating it has multiple types. In those cases the JSON inside &apos;i_value&apos; keeps track of all it&apos;s properties.</commentInRDBMS>
+<commentInRDBMS>We only support fixed set of equipment and item types, thous we can use fixed smallint without accom. table with types, because as such we know them and only need to enumerate them. Also item can have no type indicating it has multiple types. In those cases the JSON inside &lt;i_value&gt; keeps track of all its properties.</commentInRDBMS>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -63,7 +61,7 @@
 <commentInRDBMS>JSON string describing properties of the object; because we have really strange objects we keep it in JSON with the original parser from old engine of JM.</commentInRDBMS>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -77,8 +75,9 @@
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 14:21:32 UTC</createdTime>
 <ownerDesignName>models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

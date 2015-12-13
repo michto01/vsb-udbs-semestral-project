@@ -4,7 +4,7 @@
 <createdTime>2015-12-13 14:15:15 UTC</createdTime>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -14,7 +14,6 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
-<shortName>usr_ext</shortName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
 <Attribute name="ue_name" id="7AD9E986-A30F-D352-1242-6F4F211DC47D">
 <createdBy>cre8iveu</createdBy>
@@ -22,7 +21,7 @@
 <commentInRDBMS>Maximum allowed &apos;name&apos; range is 80Bytes</commentInRDBMS>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -36,7 +35,7 @@
 <commentInRDBMS>Maximum allowed length is 100Bytes</commentInRDBMS>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -51,7 +50,7 @@
 <commentInRDBMS>Nickname are usually short : max length 30B</commentInRDBMS>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -66,7 +65,7 @@
 <commentInRDBMS>DOB = day of birth, manadatory</commentInRDBMS>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -79,7 +78,7 @@
 <commentInRDBMS>URI of the user image.</commentInRDBMS>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -92,7 +91,7 @@
 <createdTime>2015-12-13 14:59:51 UTC</createdTime>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -106,7 +105,7 @@
 <generatorID>124EAF8A-E3F5-526F-1287-01E001EB5F1D</generatorID>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
 </engineerTo>
 <referedAttribute>72044D4E-9372-B9F9-48DF-991DC8E40DAB</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -120,8 +119,9 @@
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 15:01:28 UTC</createdTime>
 <ownerDesignName>models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="false"/>
 </engineerTo>
 <pk>true</pk>
 </identifier>

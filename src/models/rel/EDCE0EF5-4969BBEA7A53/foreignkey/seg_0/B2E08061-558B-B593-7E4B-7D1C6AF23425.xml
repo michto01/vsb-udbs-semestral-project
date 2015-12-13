@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B2E08061-558B-B593-7E4B-7D1C6AF23425" containerWithKeyObject="741233A4-8E97-8D51-4B28-4098E59EF913" localFKIndex="E557AECF-E6E4-7BC9-59F6-29FB33D5D3BF" name="Quest_World_FK">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<generatorID>AB976F1A-816B-0B5D-06C8-1DE24FBD94BB</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>34E9FC14-48F3-CE99-DF25-B34B668C52F7</referredTableID>
+<keyObject>C6ACEB30-B468-BC75-1F90-69BE6F8CE796</keyObject>
+<referredKeyID>C6ACEB30-B468-BC75-1F90-69BE6F8CE796</referredKeyID>
+<mandatory>false</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

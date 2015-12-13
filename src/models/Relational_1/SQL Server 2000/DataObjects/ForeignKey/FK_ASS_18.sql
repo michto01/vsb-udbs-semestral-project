@@ -1,0 +1,14 @@
+ALTER TABLE "User->inventory"
+ADD CONSTRAINT FK_ASS_18 FOREIGN KEY
+(
+UserIntentory_i_id
+)
+REFERENCES UserIntentory
+(
+i_id
+)
+ON
+DELETE
+  NO ACTION ON
+UPDATE NO ACTION
+GO

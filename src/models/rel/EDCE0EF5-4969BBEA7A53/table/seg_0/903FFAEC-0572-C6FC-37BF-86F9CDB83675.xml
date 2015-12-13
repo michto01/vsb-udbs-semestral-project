@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="903FFAEC-0572-C6FC-37BF-86F9CDB83675" schemaObject="4BEB885E-1C27-39CC-ACD1-A1D4115360C3" name="Journey">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<generatorID>31B5CFED-1BC9-AA3B-378A-07AB240C8496</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDDLTransformationScript>true</useDDLTransformationScript>
+<abbreviation>jrn</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="j_id" id="3DF33BEC-2304-9DE8-A8A1-389F7B7599EF">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<generatorID>0AAAEE67-0250-E2D2-582A-D5EF9C28B956</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="j_points" id="41D7AD98-9AE5-0B25-8F56-3C44492A25C6">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<generatorID>9BD62C62-D05A-20F0-1255-0560EBED92BC</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="j_points_max" id="50CA6D13-984C-BDF8-54BA-7CA6DF9F1AB0">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<commentInRDBMS>Maximum avaliable points for this journey</commentInRDBMS>
+<generatorID>B4DACF40-21BA-26E0-055E-3E573123422D</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="j_status" id="ED5D9282-9BA0-39C5-EF70-02A48B138407">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<commentInRDBMS>The current status of the quest of the user.</commentInRDBMS>
+<generatorID>E82FA2F9-FB1F-314F-D619-5BACEDF598D3</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="User_u_id" id="B64695BD-5234-B057-DD7A-A57486AD1845">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<comment>Users primary key</comment>
+<generatorID>C1A585F7-80CA-5998-86E2-C9324795FBFB</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2A32F649-0020-5A7B-FC0A-03085443801D" referredColumn="7D94046F-624C-BCB4-C49E-7ED449B1B100"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D083574-2B1C-4D76-5093-BE8958E15158" name="Journey_PK">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<generatorID>2B15F921-9ACB-1CA9-BA57-F3E343506E5E</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3DF33BEC-2304-9DE8-A8A1-389F7B7599EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AFE04624-1AAD-AE11-1D69-5A02AA782D68" name="Journey_User_FK">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<generatorID>A99E5683-6F0C-612E-4621-37B5F8DA0225</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B64695BD-5234-B057-DD7A-A57486AD1845"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,8 @@
+ALTER TABLE "User" ADD CONSTRAINT User_PK PRIMARY KEY CLUSTERED (u_id)
+WITH
+  (
+    ALLOW_PAGE_LOCKS = ON ,
+    ALLOW_ROW_LOCKS  = ON
+  )
+  ON "default"
+GO

@@ -1,0 +1,14 @@
+ALTER TABLE QuestTaskItem
+ADD CONSTRAINT QuestTaskItem_QuestTask_FK FOREIGN KEY
+(
+QuestTask_qt_id
+)
+REFERENCES QuestTask
+(
+qt_id
+)
+ON
+DELETE
+  NO ACTION ON
+UPDATE NO ACTION
+GO

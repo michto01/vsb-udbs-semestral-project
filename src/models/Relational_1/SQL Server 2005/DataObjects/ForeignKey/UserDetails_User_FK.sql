@@ -1,0 +1,14 @@
+ALTER TABLE UserDetails
+ADD CONSTRAINT UserDetails_User_FK FOREIGN KEY
+(
+User_u_id
+)
+REFERENCES "User"
+(
+u_id
+)
+ON
+DELETE
+  NO ACTION ON
+UPDATE NO ACTION
+GO

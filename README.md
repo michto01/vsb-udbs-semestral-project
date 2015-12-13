@@ -74,6 +74,7 @@ thouse the interaction with the server are expeceted to increase.
 ![USE CASES complete diagram](./dist/img/diag-uc-complete.png "Complete UC diagram")
 
 #### Detailed descriptions
+
 - Login [UC-1-LOGIN](./dist/uc/uc-01-play-journey.md)
 - 
 
@@ -96,5 +97,69 @@ thouse the interaction with the server are expeceted to increase.
 Sys.   = System    ~> Players are normally created via OAuth API (fallback Admin).
 
 Moder. = Moderator ~> Lover access level than Admin, higher than player.
+
+[//]: # (Data analysis)
+
+# 4 Data analysis
+
+## 4.1 Linear notation
+
+### Tables
+
+| Table		| Attributes									|
+| :--- 		| :---  									|
+|User 		| (u\_id, u\_email, u\_password, u\_role\_str)					|
+|UserDetails	| (ue\_name, ue\_surname, ue\_nickname, ue\_dob, ue\_uri\_avatar, ue\_level) 	|
+|UserInventory	| (i\_id, i\_name, i\_type, i\_content)						|
+|Journey	| (j\_id, j\_points, j\_points\_max, j\_status)					|
+|Quest		| (q\_id, q\_start, q\_end)							|
+|QuestTask	| (qt\_id, qt\_name, qt\_type, qt\_dificulty, qt\_uri\_data, qt\_uri\_badge)	|
+|QuestTaskItem 	| (qi\_id, qi\_name, qi\_data, qi\_uri\_image, qi\_eveluation)			|
+|World		| (w\_id, w\_short\_name, w\_fullname)						|
+
+
+### Relations
+
+| 		|	|		 |							|
+|	-	|   -	|	-	 |			     -				|
+| Details	| of    | User		 | (User: (1,1), UserDetails(1,1))			|
+| User		| M:N	| UserInventory	 | (User: (0,M), UserInventory(0:N))			|
+| User		| M:N	| World		 | (User: (0,M), World(0,N))				|
+| World		| has	| Quests	 | (World: (1,1), Quest(0,N))				|
+| Quest		| has	| QuestTasks	 | (Quest: (1,1), QuestTask(0,N))			|
+| QuestTask	| has	| QuestTaskItems | (QuestTask: (1,1), QuestTaskItems(0,N))		|
+| Journeys	| of	| User (player)  | (User: (1,1), Journey(0,N))				|
+| JourneysTasks | rep.\*| *assoc. table* | ( Journey(1,1), QuestTask(0,N), QuestTaskItem(0,N))  |
+
+\* represented by
+
+## 4.2 Conceptual model
+
+![CONCEPTUAL MODEL](./dist/img/model-concept.png "Conceptual model")
+
+## 4.3 Relational model
+
+![RELATIONAL MODEL](./dist/img/model-relational_1.png "Relational model")
+
+## 4.4 Data model
+
+![DATA MODEL](./dist/img/model-data.png "Data model")
+
+## 4.5 Constraints
+
+[//]: # (Functional analysis section)
+
+# 5 Functional analysis
+
+## 5.1 Functional dependencies
+
+## 5.2 Raletiona after decomposition and minimalizations
+
+## 5.3 Normal forms
+
+[//]: # (Conclusion section)
+
+# 6 Finalized design
+
 
 

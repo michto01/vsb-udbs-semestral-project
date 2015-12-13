@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="741233A4-8E97-8D51-4B28-4098E59EF913" schemaObject="4BEB885E-1C27-39CC-ACD1-A1D4115360C3" name="Quest">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<generatorID>E6B5E355-647F-576E-F0A2-79991DB96A30</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDDLTransformationScript>true</useDDLTransformationScript>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="q_id" id="A4EC2137-D7CB-CB1B-FC92-7D541EEC211A">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<generatorID>B61103DB-2FF3-EE2C-A2BE-E396D73CF46A</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="q_start" id="EF545254-8609-8873-9055-0768EB5AA7B0">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<commentInRDBMS>The begining of the quest is not mandatory as the old qest were not marked with start date, but new records should treat this field as mandatory.</commentInRDBMS>
+<generatorID>810A5172-263E-F79C-220D-CD8C1025ABED</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="q_end" id="560E8C4F-A9A3-0466-06BA-B78686F72A82">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<commentInRDBMS>The end of the qest is mandatory</commentInRDBMS>
+<generatorID>D7F688A1-3FC8-F350-35A1-BEF28919FE3F</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="World_w_id" id="8CED528D-1083-309D-3798-252DD96522FA">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<generatorID>F5EADBF9-9F2B-327A-DFB3-C7AE80AD185A</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2E08061-558B-B593-7E4B-7D1C6AF23425" referredColumn="8B11A941-AA8B-AA18-126B-052309FDB637"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E4ADD54E-7E68-659A-5CE1-05A15F28EF32" name="Quest_PK">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<generatorID>191A109D-2340-3125-1F3B-4DDB77573EEA</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4EC2137-D7CB-CB1B-FC92-7D541EEC211A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E557AECF-E6E4-7BC9-59F6-29FB33D5D3BF" name="Quest_World_FK">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<generatorID>AB976F1A-816B-0B5D-06C8-1DE24FBD94BB</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8CED528D-1083-309D-3798-252DD96522FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

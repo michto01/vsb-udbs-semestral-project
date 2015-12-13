@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A3ABA074-74E7-EA0E-E8FD-11F65D11B4B4" schemaObject="4BEB885E-1C27-39CC-ACD1-A1D4115360C3" name="UserIntentory">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<generatorID>987F820F-3338-2D0F-4267-10BFCAF6C856</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDDLTransformationScript>true</useDDLTransformationScript>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="i_id" id="3A76B496-CE3C-0351-A522-09247BF8A663">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<generatorID>01DC1F09-CBC3-2C34-0E11-9B13CD7EF6D5</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="i_name" id="2C745777-F20A-4400-FCBC-610F72048839">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<commentInRDBMS>Names of items should be keept long to allow simpler search.</commentInRDBMS>
+<generatorID>A361497A-A535-73E6-C2B9-AFAE4D222381</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="i_type" id="EFEC0FEB-3C69-6C13-676E-57843CA4D096">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<commentInRDBMS>We only support fixed set of equipment and item types, thous we can use fixed smallint without accom. table with types, because as such we know them and only need to enumerate them. Also item can have no type indicating it has multiple types. In those cases the JSON inside &lt;i_value&gt; keeps track of all its properties.</commentInRDBMS>
+<generatorID>2B0A9523-10DA-0F9B-2E1E-79DC4D94C45C</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="i_content" id="20E121A5-CABA-648E-A472-5E42186A3469">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<commentInRDBMS>JSON string describing properties of the object; because we have really strange objects we keep it in JSON with the original parser from old engine of JM.</commentInRDBMS>
+<generatorID>8EEA36E7-B128-B2E3-8F78-43DD7F7DA0D3</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="28FD1F87-5F1D-5A80-8971-BF642BF1985E" name="UserIntentory_PK">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<generatorID>17E9CB9C-78EE-6F72-E2A5-D2F7B50CD646</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A76B496-CE3C-0351-A522-09247BF8A663"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="701689F6-8621-4085-E062-1ABC56363642" name="User_inventory">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 17:10:57 UTC</createdTime>
+<generatorID>A990A6E0-1DF8-997D-00F9-A92F58425EE8</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>
