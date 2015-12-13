@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="15A69807-CEB0-9FC3-2807-04A5522A0B45" name="UserDetails">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 15:48:47 UTC</createdTime>
+<generatorID>1CD4A8CB-FE60-A7BB-9E7A-A25EA9E41FDC</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<abbreviation>usr_ext</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ue_name" id="509A8DA4-162B-9B6B-EC15-CF1F79140356">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 15:48:47 UTC</createdTime>
+<commentInRDBMS>Maximum allowed &apos;name&apos; range is 80Bytes</commentInRDBMS>
+<generatorID>7AD9E986-A30F-D352-1242-6F4F211DC47D</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 BYTE</dataTypeSize>
+<ownDataTypeParameters>80 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ue_surname" id="23F8A670-CAB8-9D79-AC94-1C32CE32052E">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 15:48:47 UTC</createdTime>
+<commentInRDBMS>Maximum allowed length is 100Bytes</commentInRDBMS>
+<generatorID>473122B6-0C36-38A4-A04B-10EFF0C9DD6D</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ue_nickname" id="1B9D42AE-7BDF-E997-809F-E7C137442369">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 15:48:47 UTC</createdTime>
+<commentInRDBMS>Nickname are usually short : max length 30B</commentInRDBMS>
+<generatorID>9EA9EEA2-CE60-AFA5-663F-0593725C4AFF</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ue_dob" id="4368A53E-60F0-2FA9-37C4-3C877B40AF92">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 15:48:47 UTC</createdTime>
+<commentInRDBMS>DOB = day of birth, manadatory</commentInRDBMS>
+<generatorID>0FCDE4AB-41BF-C9C2-9F47-A66DBE1224A2</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ue_uri_avatar" id="FC0B3340-557C-A1F3-8BED-100B4AAD18BC">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 15:48:47 UTC</createdTime>
+<commentInRDBMS>URI of the user image.</commentInRDBMS>
+<generatorID>FB70C3F6-8499-30D1-5F56-727513F7088B</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ue_level" id="A4CAB1AA-E871-20D3-F78D-DA7111C684A8">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 15:48:47 UTC</createdTime>
+<generatorID>180D9A23-67A7-220A-8CAC-39A7E1536ED1</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usr_u_id" id="909D23AF-5278-E74E-2877-F19AB8AD2D3E">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 15:48:47 UTC</createdTime>
+<comment>Users primary key</comment>
+<generatorID>8B6B063D-398F-AF00-A121-435143B07D09</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F23FF7B-0935-0646-2878-DE8F14C3C5CA" referredColumn="3B64B9D6-B84A-204B-EF8B-A9B62D0A3A94"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BFEC9CD0-1819-9405-14E6-F076A3ECC0A4" name="UserDetails_PK">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 15:48:47 UTC</createdTime>
+<generatorID>9F089BF5-807D-8CCB-535A-10C4DD7E2C34</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="DD4A1BAF-7B6A-6C96-5D15-E7441AF4C57B" name="UserDetails__IDX">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 15:48:47 UTC</createdTime>
+<ownerDesignName>models</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>124EAF8A-E3F5-526F-1287-01E001EB5F1D</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="909D23AF-5278-E74E-2877-F19AB8AD2D3E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B37112D-4EC0-0A39-C0D2-BEC13F20743A" name="UserDetails_usr_FK">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 15:48:47 UTC</createdTime>
+<generatorID>124EAF8A-E3F5-526F-1287-01E001EB5F1D</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="909D23AF-5278-E74E-2877-F19AB8AD2D3E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
