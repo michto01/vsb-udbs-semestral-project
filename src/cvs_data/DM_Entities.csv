@@ -1,0 +1,10 @@
+Entity_Name,ObjectID,NumOID,ImportID,ModelID,Num_ModelID,Structured_Type_ID,Num_Structured_Type_ID,Structured_Type_Name,Number_Data_Elements,Classification_Type,Allow_Type_Substitution,Min_Volume,Expected_Volume,Max_Volume,Growth_Rate_Percents,Growth_Rate_Interval,Normal_Form,Temporary_Object_Scope,Adequately_Normalized,Substitution_Parent,Num_Substitution_Parent,Synonyms,Synonym_To_Display,Preferred_Abbreviation,SuperTypeEntity_ID,Num_SuperTypeEntity_ID,Engineering_Strategy,Owner,Entity_Source
+"Journey",31B5CFED-1BC9-AA3B-378A-07AB240C8496,70,,AE406F9F-E8B8-4D5C-5D14-A4803227B0EC,69,,,,5,,Y,0,0,9999999,0,Year,Third,,N,,,,,,,,,,,
+"JourneyTask",7C673D94-05C5-9198-B164-93EC84697FBA,71,,AE406F9F-E8B8-4D5C-5D14-A4803227B0EC,69,,,,3,,Y,0,0,9999999,0,Year,Third,,N,,,,,,,,,,,
+"Quest",E6B5E355-647F-576E-F0A2-79991DB96A30,72,,AE406F9F-E8B8-4D5C-5D14-A4803227B0EC,69,,,,4,,Y,0,0,9999999,0,Year,Third,,N,,,,,,,,,,,
+"QuestTask",23559D94-DEDB-EF76-F8C4-528EB5FAE26A,73,,AE406F9F-E8B8-4D5C-5D14-A4803227B0EC,69,,,,7,,Y,0,0,9999999,0,Year,Third,,N,,,,,,,,,,,
+"QuestTaskItem",DB86D7BB-F58A-A745-FFC1-8FABD753E46B,74,,AE406F9F-E8B8-4D5C-5D14-A4803227B0EC,69,,,,8,,Y,0,0,9999999,0,Year,Third,,N,,,,,,,,,,,
+"User",F795F7C7-BCC6-84A2-BAD8-719AC5E92231,75,,AE406F9F-E8B8-4D5C-5D14-A4803227B0EC,69,,,,4,,Y,0,0,9999999,0,Year,Third,,N,,,,,,,,,,,
+"UserDetails",1CD4A8CB-FE60-A7BB-9E7A-A25EA9E41FDC,76,,AE406F9F-E8B8-4D5C-5D14-A4803227B0EC,69,,,,7,,Y,0,0,9999999,0,Year,Third,,N,,,,,,,,,,,
+"UserIntentory",987F820F-3338-2D0F-4267-10BFCAF6C856,77,,AE406F9F-E8B8-4D5C-5D14-A4803227B0EC,69,,,,4,,Y,0,0,9999999,0,Year,Third,,N,,,,,,,,,,,
+"World",FE0800D1-66DD-12B7-56E1-38920E2B9A56,78,,AE406F9F-E8B8-4D5C-5D14-A4803227B0EC,69,,,,3,,Y,0,0,9999999,0,Year,Third,,N,,,,,,,,,,,

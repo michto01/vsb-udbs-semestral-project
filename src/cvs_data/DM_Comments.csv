@@ -1,0 +1,11 @@
+ObjectID,NumOID,Type,Sequence,Text
+0515AB57-8CC1-570B-EBA9-24458A610596,89,Attribute,1,"Mandatory name of the item.",
+72044D4E-9372-B9F9-48DF-991DC8E40DAB,98,Attribute,1,"Users primary key",
+0DD781E7-690A-4BF4-6CFE-5A27226A542B,99,Attribute,1,"Passwords are mandatory, no user can exist without password for security reasons.",
+8B6B063D-398F-AF00-A121-435143B07D09,114,Attribute,1,"Users primary key",
+C1A585F7-80CA-5998-86E2-C9324795FBFB,123,Attribute,1,"Users primary key",
+B64695BD-5234-B057-DD7A-A57486AD1845,161,Column,1,"Users primary key",
+21ABF79C-ED9A-D741-5FF6-862D75DF256A,162,Column,1,"Users primary key",
+41B3241E-5183-DEC4-CD4B-608EAD37EA82,182,Column,1,"Mandatory name of the item.",
+7D94046F-624C-BCB4-C49E-7ED449B1B100,192,Column,1,"Users primary key",
+54ADE4FB-E7A6-90C8-5659-DF14BDF546A0,193,Column,1,"Passwords are mandatory, no user can exist without password for security reasons.",

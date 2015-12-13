@@ -108,14 +108,14 @@ Moder. = Moderator ~> Lover access level than Admin, higher than player.
 
 | Table		| Attributes									|
 | :--- 		| :---  									|
-|User 		| (u\_id, u\_email, u\_password, u\_role\_str)					|
+|User 		| (**u\_id**, u\_email, u\_password, u\_role\_str)					|
 |UserDetails	| (ue\_name, ue\_surname, ue\_nickname, ue\_dob, ue\_uri\_avatar, ue\_level) 	|
-|UserInventory	| (i\_id, i\_name, i\_type, i\_content)						|
-|Journey	| (j\_id, j\_points, j\_points\_max, j\_status)					|
-|Quest		| (q\_id, q\_start, q\_end)							|
-|QuestTask	| (qt\_id, qt\_name, qt\_type, qt\_dificulty, qt\_uri\_data, qt\_uri\_badge)	|
-|QuestTaskItem 	| (qi\_id, qi\_name, qi\_data, qi\_uri\_image, qi\_eveluation)			|
-|World		| (w\_id, w\_short\_name, w\_fullname)						|
+|UserInventory	| (**i\_id**, i\_name, i\_type, i\_content)						|
+|Journey	| (**j\_id**, j\_points, j\_points\_max, j\_status)					|
+|Quest		| (**q\_id**, q\_start, q\_end)							|
+|QuestTask	| (**qt\_id**, qt\_name, qt\_type, qt\_dificulty, qt\_uri\_data, qt\_uri\_badge)	|
+|QuestTaskItem 	| (**qi\_id**, qi\_name, qi\_data, qi\_uri\_image, qi\_eveluation)			|
+|World		| (**w\_id**, w\_short\_name, w\_fullname)						|
 
 
 ### Relations
