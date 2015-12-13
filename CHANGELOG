@@ -1,17 +1,8 @@
-* [33mcommit f10ae62[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
-[31m|[m Author: Tomas Michalek <tomas.michalek.st@vsb.cz>
-[31m|[m Date:   Mon Dec 7 21:35:49 2015 +0100
-[31m|[m 
-[31m|[m     Added Changelog file to keep track of changes.
-[31m|[m  
-* [33mcommit 390d9b3[m
-[31m|[m Author: Tomas Michalek <tomas.michalek.st@vsb.cz>
-[31m|[m Date:   Mon Dec 7 21:25:10 2015 +0100
-[31m|[m 
-[31m|[m     Licence to edited ICS
-[31m|[m  
-* [33mcommit 548dd62[m
-  Author: Tomas Michalek <tomas.michalek.st@vsb.cz>
-  Date:   Mon Dec 7 21:08:29 2015 +0100
-  
-      Initial Commit 0.1
+* [33md781596[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m First relational model
+* [33m8f9fdfd[m Relationships modification
+* [33m4cdc116[m Quest items in model added
+* [33m8518827[m Models
+* [33m1503793[m Added changelog entry. Added github mirror.
+* [33mf10ae62[m Added Changelog file to keep track of changes.
+* [33m390d9b3[m Licence to edited ICS
+* [33m548dd62[m Initial Commit 0.1
