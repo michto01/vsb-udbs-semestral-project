@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="World -&gt; Quest" directorySegmentName="seg_0" id="AB976F1A-816B-0B5D-06C8-1DE24FBD94BB">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 15:42:17 UTC</createdTime>
+<ownerDesignName>models</ownerDesignName>
+<engineerTo>
+<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+</engineerTo>
+<sourcePk>5836F5EA-7AF7-02AA-D0B8-07BDE1D6915D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FE0800D1-66DD-12B7-56E1-38920E2B9A56</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E6B5E355-647F-576E-F0A2-79991DB96A30</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
