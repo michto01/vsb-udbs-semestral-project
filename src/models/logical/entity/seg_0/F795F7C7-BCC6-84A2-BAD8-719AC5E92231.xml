@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F795F7C7-BCC6-84A2-BAD8-719AC5E92231" name="User">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 14:09:05 UTC</createdTime>
+<ownerDesignName>models</ownerDesignName>
+<engineerTo>
+<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>usr</preferredAbbreviation>
+<shortName>usr</shortName>
+<synonym>Users</synonym>
+<synonymToDisplay>users,members,players,admins</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="u_id" id="72044D4E-9372-B9F9-48DF-991DC8E40DAB">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 14:09:47 UTC</createdTime>
+<comment>Users primary key</comment>
+<commentInRDBMS>Primary key of &apos;USER&apos; table</commentInRDBMS>
+<ownerDesignName>models</ownerDesignName>
+<engineerTo>
+<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="u_password" id="0DD781E7-690A-4BF4-6CFE-5A27226A542B">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 14:11:19 UTC</createdTime>
+<comment>Passwords are mandatory, no user can exist without password for security reasons.</comment>
+<commentInRDBMS>Passwords are mandatory, no user can exist without password for security reasons.</commentInRDBMS>
+<ownerDesignName>models</ownerDesignName>
+<engineerTo>
+<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="u_email" id="C2CAE03A-0DC8-3510-DF82-09DA347E852D">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 14:12:19 UTC</createdTime>
+<commentInRDBMS>Uses common axiom, that user&apos;s email should not be longer than 255 characters.</commentInRDBMS>
+<ownerDesignName>models</ownerDesignName>
+<engineerTo>
+<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="u_role_str" id="56BBEEDF-9C49-103F-2656-B3721BC6B29F">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 14:13:44 UTC</createdTime>
+<commentInRDBMS>Shoud not by longer than 60 characters</commentInRDBMS>
+<ownerDesignName>models</ownerDesignName>
+<engineerTo>
+<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 BYTE</dataTypeSize>
+<ownDataTypeParameters>60 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2C1AC0F8-7E74-99AB-AFF9-DD89A2F7E1EC" name="User PK">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 14:10:42 UTC</createdTime>
+<ownerDesignName>models</ownerDesignName>
+<engineerTo>
+<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>72044D4E-9372-B9F9-48DF-991DC8E40DAB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

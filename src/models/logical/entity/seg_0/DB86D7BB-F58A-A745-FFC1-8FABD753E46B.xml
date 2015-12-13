@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DB86D7BB-F58A-A745-FFC1-8FABD753E46B" name="QuestTaskItem">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 14:47:52 UTC</createdTime>
+<ownerDesignName>models</ownerDesignName>
+<engineerTo>
+<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>quest_item</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="qi_id" id="133BB375-3D7C-16D1-D72C-6E2CDBEA0BC1">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 14:48:27 UTC</createdTime>
+<ownerDesignName>models</ownerDesignName>
+<engineerTo>
+<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qi_name" id="0515AB57-8CC1-570B-EBA9-24458A610596">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 14:50:18 UTC</createdTime>
+<comment>Mandatory name of the item.</comment>
+<ownerDesignName>models</ownerDesignName>
+<engineerTo>
+<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 BYTE</dataTypeSize>
+<ownDataTypeParameters>60 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qi_data" id="134E97AA-1F70-0463-1A1A-A099F5FCE2C2">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 14:52:10 UTC</createdTime>
+<commentInRDBMS>JSON data for the quest task</commentInRDBMS>
+<ownerDesignName>models</ownerDesignName>
+<engineerTo>
+<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qi_uri_image" id="6F0C35C8-2BE2-88C8-8907-04A210C88A28">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 14:53:12 UTC</createdTime>
+<ownerDesignName>models</ownerDesignName>
+<engineerTo>
+<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qi_evaluation" id="5ED5E25E-B635-0AFE-92C1-76803423E61B">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 14:53:58 UTC</createdTime>
+<commentInRDBMS>Point or percent to evaluate.</commentInRDBMS>
+<ownerDesignName>models</ownerDesignName>
+<engineerTo>
+<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="069B300C-53F8-F611-9B1C-738D0F124F24" name="QuestTaskItem PK">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 14:50:01 UTC</createdTime>
+<ownerDesignName>models</ownerDesignName>
+<engineerTo>
+<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>133BB375-3D7C-16D1-D72C-6E2CDBEA0BC1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

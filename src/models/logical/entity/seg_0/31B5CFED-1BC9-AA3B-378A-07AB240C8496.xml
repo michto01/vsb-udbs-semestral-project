@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="31B5CFED-1BC9-AA3B-378A-07AB240C8496" name="Journey">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 14:56:08 UTC</createdTime>
+<ownerDesignName>models</ownerDesignName>
+<engineerTo>
+<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>jrn</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="j_id" id="0AAAEE67-0250-E2D2-582A-D5EF9C28B956">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 14:56:26 UTC</createdTime>
+<ownerDesignName>models</ownerDesignName>
+<engineerTo>
+<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="j_points" id="9BD62C62-D05A-20F0-1255-0560EBED92BC">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 14:56:42 UTC</createdTime>
+<ownerDesignName>models</ownerDesignName>
+<engineerTo>
+<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="j_points_max" id="B4DACF40-21BA-26E0-055E-3E573123422D">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 14:57:49 UTC</createdTime>
+<commentInRDBMS>Maximum avaliable points for this journey</commentInRDBMS>
+<ownerDesignName>models</ownerDesignName>
+<engineerTo>
+<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="j_status" id="E82FA2F9-FB1F-314F-D619-5BACEDF598D3">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 14:58:58 UTC</createdTime>
+<commentInRDBMS>The current status of the quest of the user.</commentInRDBMS>
+<ownerDesignName>models</ownerDesignName>
+<engineerTo>
+<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2B15F921-9ACB-1CA9-BA57-F3E343506E5E" name="Journey PK">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 14:56:40 UTC</createdTime>
+<ownerDesignName>models</ownerDesignName>
+<engineerTo>
+<item key="AA84929F-ABC0-F299-A601-E1325FDA9D01" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0AAAEE67-0250-E2D2-582A-D5EF9C28B956</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
