@@ -1,14 +1,28 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="283A0530-E285-C5F1-AA99-4FC1BFB42288" schemaObject="4BEB885E-1C27-39CC-ACD1-A1D4115360C3" name="UserDetails">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="283A0530-E285-C5F1-AA99-4FC1BFB42288" schemaObject="4BEB885E-1C27-39CC-ACD1-A1D4115360C3" name="User">
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 16:46:06 UTC</createdTime>
 <generatorID>1CD4A8CB-FE60-A7BB-9E7A-A25EA9E41FDC</generatorID>
 <ownerDesignName>models</ownerDesignName>
+<ordsAlias>userdetails</ordsAlias>
 <useDDLTransformationScript>true</useDDLTransformationScript>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="User_u_id" id="21ABF79C-ED9A-D741-5FF6-862D75DF256A">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-14 09:23:19 UTC</createdTime>
+<comment>Users primary key</comment>
+<generatorID>8B6B063D-398F-AF00-A121-435143B07D09</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="ue_name" id="EB98F2B8-409E-3B3B-5915-990A0CADA0CC">
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 16:46:06 UTC</createdTime>
@@ -86,21 +100,58 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="User_u_id" id="21ABF79C-ED9A-D741-5FF6-862D75DF256A">
+<Column name="u_id" id="7D94046F-624C-BCB4-C49E-7ED449B1B100">
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 16:46:06 UTC</createdTime>
 <comment>Users primary key</comment>
-<generatorID>8B6B063D-398F-AF00-A121-435143B07D09</generatorID>
+<commentInRDBMS>Primary key of &lt;USER&gt; table</commentInRDBMS>
+<generatorID>72044D4E-9372-B9F9-48DF-991DC8E40DAB</generatorID>
 <ownerDesignName>models</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT027</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="5BD400C7-962A-2C04-15F3-8E7CB35B673C" referredColumn="7D94046F-624C-BCB4-C49E-7ED449B1B100"/>
-</associations>
+</Column>
+<Column name="u_password" id="54ADE4FB-E7A6-90C8-5659-DF14BDF546A0">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<comment>Passwords are mandatory, no user can exist without password for security reasons.</comment>
+<commentInRDBMS>Passwords are mandatory, no user can exist without password for security reasons.</commentInRDBMS>
+<generatorID>0DD781E7-690A-4BF4-6CFE-5A27226A542B</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="u_email" id="0F3F8D1D-92E4-8B8F-55F3-70EA08FFE4BB">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<commentInRDBMS>Uses common axiom, that user`s email should not be longer than 255 characters.</commentInRDBMS>
+<generatorID>C2CAE03A-0DC8-3510-DF82-09DA347E852D</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="u_role_str" id="6F1AEBA5-EDC7-3480-12B2-271FB1FE97C4">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<commentInRDBMS>Shoud not by longer than 60 characters</commentInRDBMS>
+<generatorID>56BBEEDF-9C49-103F-2656-B3721BC6B29F</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 BYTE</dataTypeSize>
+<ownDataTypeParameters>60 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -112,6 +163,20 @@
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D94046F-624C-BCB4-C49E-7ED449B1B100"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F407E168-C442-5285-5056-E773C018C25B" name="User_PK">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 16:46:06 UTC</createdTime>
+<generatorID>2C1AC0F8-7E74-99AB-AFF9-DD89A2F7E1EC</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D94046F-624C-BCB4-C49E-7ED449B1B100"/>
+</indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="F8C2D64D-7792-EA50-B691-A658890B8E58" name="UserDetails__IDX">
 <createdBy>cre8iveu</createdBy>
@@ -120,17 +185,6 @@
 <indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <relationGeneratorID>124EAF8A-E3F5-526F-1287-01E001EB5F1D</relationGeneratorID>
-<indexColumnUsage>
-<colUsage columnID="21ABF79C-ED9A-D741-5FF6-862D75DF256A"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="B5CEEDC3-1FDF-2536-F769-3CF2838943BB" name="UserDetails_User_FK">
-<createdBy>cre8iveu</createdBy>
-<createdTime>2015-12-13 16:46:06 UTC</createdTime>
-<generatorID>124EAF8A-E3F5-526F-1287-01E001EB5F1D</generatorID>
-<ownerDesignName>models</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="21ABF79C-ED9A-D741-5FF6-862D75DF256A"/>
 </indexColumnUsage>
