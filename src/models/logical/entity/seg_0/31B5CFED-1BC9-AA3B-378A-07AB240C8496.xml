@@ -4,7 +4,7 @@
 <createdTime>2015-12-13 14:56:08 UTC</createdTime>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -16,50 +16,50 @@
 <normalForm>Third</normalForm>
 <shortName>jrn</shortName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="j_id" id="0AAAEE67-0250-E2D2-582A-D5EF9C28B956">
+<Attribute name="j id" id="0AAAEE67-0250-E2D2-582A-D5EF9C28B956">
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 14:56:26 UTC</createdTime>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT027</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="j_points" id="9BD62C62-D05A-20F0-1255-0560EBED92BC">
+<Attribute name="j points" id="9BD62C62-D05A-20F0-1255-0560EBED92BC">
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 14:56:42 UTC</createdTime>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT020</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="j_points_max" id="B4DACF40-21BA-26E0-055E-3E573123422D">
+<Attribute name="j points max" id="B4DACF40-21BA-26E0-055E-3E573123422D">
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 14:57:49 UTC</createdTime>
 <commentInRDBMS>Maximum avaliable points for this journey</commentInRDBMS>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT020</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="j_status" id="E82FA2F9-FB1F-314F-D619-5BACEDF598D3">
+<Attribute name="j status" id="E82FA2F9-FB1F-314F-D619-5BACEDF598D3">
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 14:58:58 UTC</createdTime>
 <commentInRDBMS>The current status of the quest of the user.</commentInRDBMS>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -67,14 +67,14 @@
 <logicalDatatype>LOGDT018</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="u_id" id="C1A585F7-80CA-5998-86E2-C9324795FBFB">
+<Attribute name="u id" id="C1A585F7-80CA-5998-86E2-C9324795FBFB">
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 15:46:33 UTC</createdTime>
 <comment>Users primary key</comment>
 <generatorID>A99E5683-6F0C-612E-4621-37B5F8DA0225</generatorID>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>72044D4E-9372-B9F9-48DF-991DC8E40DAB</referedAttribute>
@@ -91,7 +91,7 @@
 <ownerDesignName>models</ownerDesignName>
 <shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="false"/>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

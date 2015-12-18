@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E568CB3D-9BAD-71AB-B9BC-906D2CA55EA5" schemaObject="A77F7C43-306C-140F-9A40-37813CC0B80C" name="User">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-18 08:32:06 UTC</createdTime>
+<generatorID>1CD4A8CB-FE60-A7BB-9E7A-A25EA9E41FDC</generatorID>
+<ownerDesignName>models_final</ownerDesignName>
+<ordsAlias>userdetails</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="u_id" id="8C0275CE-A1B9-7C73-231A-2E4C4F336EC0">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-18 08:32:06 UTC</createdTime>
+<comment>Users primary key</comment>
+<generatorID>8B6B063D-398F-AF00-A121-435143B07D09</generatorID>
+<ownerDesignName>models_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="u_password" id="BA284C0C-C380-BADB-6301-93957D90628C">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-18 08:32:06 UTC</createdTime>
+<comment>Passwords are mandatory, no user can exist without password for security reasons.</comment>
+<commentInRDBMS>Passwords are mandatory, no user can exist without password for security reasons.</commentInRDBMS>
+<generatorID>0DD781E7-690A-4BF4-6CFE-5A27226A542B</generatorID>
+<ownerDesignName>models_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="u_email" id="F0E52E98-9F47-D627-48CC-CE9C7E0A58FE">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-18 08:32:06 UTC</createdTime>
+<commentInRDBMS>Uses common axiom, that user`s email should not be longer than 255 characters.</commentInRDBMS>
+<generatorID>C2CAE03A-0DC8-3510-DF82-09DA347E852D</generatorID>
+<ownerDesignName>models_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="u_role_str" id="68B19792-1192-4C39-FCAC-6F563613A1ED">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-18 08:32:06 UTC</createdTime>
+<commentInRDBMS>Shoud not by longer than 60 characters</commentInRDBMS>
+<generatorID>56BBEEDF-9C49-103F-2656-B3721BC6B29F</generatorID>
+<ownerDesignName>models_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 BYTE</dataTypeSize>
+<ownDataTypeParameters>60 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="71AD50D6-055C-72F8-C4B1-DAE0584CE21E" name="User_PK">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-18 08:32:06 UTC</createdTime>
+<generatorID>9F089BF5-807D-8CCB-535A-10C4DD7E2C34</generatorID>
+<ownerDesignName>models_final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C0275CE-A1B9-7C73-231A-2E4C4F336EC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -4,7 +4,7 @@
 <createdTime>2015-12-13 14:09:05 UTC</createdTime>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,28 +15,26 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="u_id" id="72044D4E-9372-B9F9-48DF-991DC8E40DAB">
+<Attribute name="u id" id="72044D4E-9372-B9F9-48DF-991DC8E40DAB">
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 14:09:47 UTC</createdTime>
-<comment>Users primary key</comment>
-<commentInRDBMS>Primary key of &lt;USER&gt; table</commentInRDBMS>
+<comment>Users primary key&lt;br/&gt;Primary key of &lt;USER&gt; table</comment>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT027</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="u_password" id="0DD781E7-690A-4BF4-6CFE-5A27226A542B">
+<Attribute name="u password" id="0DD781E7-690A-4BF4-6CFE-5A27226A542B">
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 14:11:19 UTC</createdTime>
 <comment>Passwords are mandatory, no user can exist without password for security reasons.</comment>
-<commentInRDBMS>Passwords are mandatory, no user can exist without password for security reasons.</commentInRDBMS>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -44,13 +42,13 @@
 <dataTypeSize>128 BYTE</dataTypeSize>
 <ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="u_email" id="C2CAE03A-0DC8-3510-DF82-09DA347E852D">
+<Attribute name="u email" id="C2CAE03A-0DC8-3510-DF82-09DA347E852D">
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 14:12:19 UTC</createdTime>
-<commentInRDBMS>Uses common axiom, that user`s email should not be longer than 255 characters.</commentInRDBMS>
+<comment>Uses common axiom, that user`s email should not be longer than 255 characters.</comment>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -58,13 +56,13 @@
 <dataTypeSize>255 CHAR</dataTypeSize>
 <ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="u_role_str" id="56BBEEDF-9C49-103F-2656-B3721BC6B29F">
+<Attribute name="u role str" id="56BBEEDF-9C49-103F-2656-B3721BC6B29F">
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 14:13:44 UTC</createdTime>
-<commentInRDBMS>Shoud not by longer than 60 characters</commentInRDBMS>
+<comment>Shoud not by longer than 60 characters</comment>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -80,7 +78,7 @@
 <ownerDesignName>models</ownerDesignName>
 <shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="false"/>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

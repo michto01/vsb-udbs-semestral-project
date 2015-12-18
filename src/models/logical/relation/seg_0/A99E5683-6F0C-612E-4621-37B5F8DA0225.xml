@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="User__ Journeys" directorySegmentName="seg_0" id="A99E5683-6F0C-612E-4621-37B5F8DA0225">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Journey User FK" directorySegmentName="seg_0" id="A99E5683-6F0C-612E-4621-37B5F8DA0225">
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 15:46:33 UTC</createdTime>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="true"/>
 </engineerTo>
 <sourcePk>2C1AC0F8-7E74-99AB-AFF9-DD89A2F7E1EC</sourcePk>
 <identifying>false</identifying>

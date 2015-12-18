@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="User inventoryv1" directorySegmentName="seg_0" id="A990A6E0-1DF8-997D-00F9-A92F58425EE8">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-13 15:02:35 UTC</createdTime>
+<ownerDesignName>models_final</ownerDesignName>
+<engineerTo>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="true"/>
+</engineerTo>
+<sourcePk>2C1AC0F8-7E74-99AB-AFF9-DD89A2F7E1EC</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F795F7C7-BCC6-84A2-BAD8-719AC5E92231</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>987F820F-3338-2D0F-4267-10BFCAF6C856</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

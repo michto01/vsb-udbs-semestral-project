@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="12FE27EC-0E3E-632B-6F0F-1C8E0B0424D6" name="Quest">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-18 08:32:06 UTC</createdTime>
+<generatorID>E6B5E355-647F-576E-F0A2-79991DB96A30</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="q_id" id="8B1AD065-7C43-69F6-21A8-664B7874C0A8">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-18 08:32:06 UTC</createdTime>
+<generatorID>B61103DB-2FF3-EE2C-A2BE-E396D73CF46A</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="q_start" id="8D62A559-BC28-7126-10FD-6819D78713B8">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-18 08:32:06 UTC</createdTime>
+<commentInRDBMS>The begining of the quest is not mandatory as the old qest were not marked with start date, but new records should treat this field as mandatory.</commentInRDBMS>
+<generatorID>810A5172-263E-F79C-220D-CD8C1025ABED</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="q_end" id="F87F6644-ABE7-4CBD-AD48-AE8C9275BC02">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-18 08:32:06 UTC</createdTime>
+<commentInRDBMS>The end of the qest is mandatory</commentInRDBMS>
+<generatorID>D7F688A1-3FC8-F350-35A1-BEF28919FE3F</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="w_id" id="C5F3476C-C332-78E6-A870-EF03ACEE118E">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-18 08:32:06 UTC</createdTime>
+<generatorID>F5EADBF9-9F2B-327A-DFB3-C7AE80AD185A</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2AB4A7EF-B39B-082E-8637-29DD0441CB2A" referredColumn="5316DBBE-E0FC-C89B-6220-EB57540AAF5D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4181B3E7-D6B9-CF71-A124-4C7F08BB4E28" name="Quest_PK">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-18 08:32:06 UTC</createdTime>
+<generatorID>191A109D-2340-3125-1F3B-4DDB77573EEA</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B1AD065-7C43-69F6-21A8-664B7874C0A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F5D894C7-67DF-3A36-CCDA-95B8116B20F9" name="Quest_World_FK">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-18 08:32:06 UTC</createdTime>
+<generatorID>AB976F1A-816B-0B5D-06C8-1DE24FBD94BB</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5F3476C-C332-78E6-A870-EF03ACEE118E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -4,7 +4,7 @@
 <createdTime>2015-12-13 14:20:38 UTC</createdTime>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,25 +15,25 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="i_id" id="01DC1F09-CBC3-2C34-0E11-9B13CD7EF6D5">
+<Attribute name="i id" id="01DC1F09-CBC3-2C34-0E11-9B13CD7EF6D5">
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 14:21:13 UTC</createdTime>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT027</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="i_name" id="A361497A-A535-73E6-C2B9-AFAE4D222381">
+<Attribute name="i name" id="A361497A-A535-73E6-C2B9-AFAE4D222381">
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 14:21:34 UTC</createdTime>
-<commentInRDBMS>Names of items should be keept long to allow simpler search.</commentInRDBMS>
+<comment>Names of items should be keept long to allow simpler search.</comment>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -41,13 +41,13 @@
 <dataTypeSize>50 BYTE</dataTypeSize>
 <ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="i_type" id="2B0A9523-10DA-0F9B-2E1E-79DC4D94C45C">
+<Attribute name="i type" id="2B0A9523-10DA-0F9B-2E1E-79DC4D94C45C">
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 14:22:45 UTC</createdTime>
-<commentInRDBMS>We only support fixed set of equipment and item types, thous we can use fixed smallint without accom. table with types, because as such we know them and only need to enumerate them. Also item can have no type indicating it has multiple types. In those cases the JSON inside &lt;i_value&gt; keeps track of all its properties.</commentInRDBMS>
+<comment>We only support fixed set of equipment and item types, thous we can use fixed smallint without accom. table with types, because as such we know them and only need to enumerate them. Also item can have no type indicating it has multiple types. In those cases the JSON inside &lt;i_value&gt; keeps track of all its properties.</comment>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -55,18 +55,33 @@
 <logicalDatatype>LOGDT018</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="i_content" id="8EEA36E7-B128-B2E3-8F78-43DD7F7DA0D3">
+<Attribute name="i content" id="8EEA36E7-B128-B2E3-8F78-43DD7F7DA0D3">
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 14:25:06 UTC</createdTime>
-<commentInRDBMS>JSON string describing properties of the object; because we have really strange objects we keep it in JSON with the original parser from old engine of JM.</commentInRDBMS>
+<comment>JSON string describing properties of the object; because we have really strange objects we keep it in JSON with the original parser from old engine of JM.</comment>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="u id" id="27C75D3C-DE50-0B54-E246-548B76FB5D75">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-18 09:15:48 UTC</createdTime>
+<comment>Users primary key</comment>
+<generatorID>A990A6E0-1DF8-997D-00F9-A92F58425EE8</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<engineerTo>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="true"/>
+</engineerTo>
+<referedAttribute>72044D4E-9372-B9F9-48DF-991DC8E40DAB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -77,11 +92,12 @@
 <ownerDesignName>models</ownerDesignName>
 <shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="false"/>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>01DC1F09-CBC3-2C34-0E11-9B13CD7EF6D5</attributeRef>
+<attributeRef>27C75D3C-DE50-0B54-E246-548B76FB5D75</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

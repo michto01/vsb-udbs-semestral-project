@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="351BBCFB-C3A4-5B09-B105-EE9E2197F901" name="Users__World">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-18 08:34:24 UTC</createdTime>
+<ownerDesignName>models</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="u_id" id="20E941F7-498B-DBD5-DC5B-276054726FA3">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-18 08:34:24 UTC</createdTime>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DF5E01C5-0C9A-BC5A-ADEA-39F1EE1AAAE7" referredColumn="057127B4-EAC8-7E75-AC4C-ED5C7B794CE9"/>
+</associations>
+</Column>
+<Column name="w_id" id="AFF18C0C-AEEE-E982-5EF5-EFD76D2D390F">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-18 08:34:24 UTC</createdTime>
+<ownerDesignName>models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5B96A2BB-DBE0-B48B-34D2-142EA6FF8BA1" referredColumn="5316DBBE-E0FC-C89B-6220-EB57540AAF5D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="913C1821-9A5A-E567-80A9-86CDE4CA337F" name="Users__World_PK">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-18 08:34:24 UTC</createdTime>
+<ownerDesignName>models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20E941F7-498B-DBD5-DC5B-276054726FA3"/>
+<colUsage columnID="AFF18C0C-AEEE-E982-5EF5-EFD76D2D390F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E8D0A1DA-E561-258A-6AAE-FAE18A71A2AD" name="FK_ASS_21">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-18 08:34:24 UTC</createdTime>
+<generatorID>56BA3B51-346C-9D9E-0CE9-833151E555D1</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20E941F7-498B-DBD5-DC5B-276054726FA3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8A847A77-891A-5471-F86B-E0712D30DD80" name="FK_ASS_22">
+<createdBy>cre8iveu</createdBy>
+<createdTime>2015-12-18 08:34:24 UTC</createdTime>
+<generatorID>56BA3B51-346C-9D9E-0CE9-833151E555D1</generatorID>
+<ownerDesignName>models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AFF18C0C-AEEE-E982-5EF5-EFD76D2D390F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Journey__JourneyTasks" directorySegmentName="seg_0" id="420E3FF9-005D-7022-1252-BF1BEC3C35DE">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="JourneyTask Journey FK" directorySegmentName="seg_0" id="420E3FF9-005D-7022-1252-BF1BEC3C35DE">
 <createdBy>cre8iveu</createdBy>
 <createdTime>2015-12-13 15:44:25 UTC</createdTime>
 <ownerDesignName>models</ownerDesignName>
 <engineerTo>
-<item key="EDCE0EF5-6012-FAA1-0A2D-4969BBEA7A53" value="true"/>
+<item key="FF5663E0-2067-0F19-D525-24B9B7BF889F" value="true"/>
 </engineerTo>
 <sourcePk>2B15F921-9ACB-1CA9-BA57-F3E343506E5E</sourcePk>
 <identifying>true</identifying>
