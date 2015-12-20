@@ -1,3 +1,7 @@
+Tomas Michalek <tomas.michalek.st@vsb.cz>
+
+MIC0220
+
 UDBS Semestral project | Journey master 2.0.1 - SRS
 ======================================================
 
@@ -73,10 +77,6 @@ thouse the interaction with the server are expeceted to increase.
 
 ![USE CASES complete diagram](./dist/img/diag-uc-complete.png "Complete UC diagram")
 
-#### Detailed descriptions
-
-- Login [UC-1-LOGIN](./dist/uc/uc-01-play-journey.md)
-- 
 
 ### 3.2 Context Diagram 
 
@@ -120,16 +120,16 @@ Moder. = Moderator ~> Lover access level than Admin, higher than player.
 
 ### Relations
 
-| 		|	|		 |							|
-|	-	|   -	|	-	 |			     -				|
-| Details	| of    | User		 | (User: (1,1), UserDetails(1,1))			|
-| User		| M:N	| UserInventory	 | (User: (0,M), UserInventory(0:N))			|
-| User		| M:N	| World		 | (User: (0,M), World(0,N))				|
-| World		| has	| Quests	 | (World: (1,1), Quest(0,N))				|
-| Quest		| has	| QuestTasks	 | (Quest: (1,1), QuestTask(0,N))			|
-| QuestTask	| has	| QuestTaskItems | (QuestTask: (1,1), QuestTaskItems(0,N))		|
-| Journeys	| of	| User (player)  | (User: (1,1), Journey(0,N))				|
-| JourneysTasks | rep.\*| *assoc. table* | ( Journey(1,1), QuestTask(0,N), QuestTaskItem(0,N))  |
+| 			|		|		 |					|
+|	:---		|   :---:	|	:---	 |			     :---	|
+| Details	| of	| User		 | (User: (1,1), UserDetails(1,1))     |
+| User		| M:N	| UserInventory	 | (User: (0,M), UserInventory(0:N))|
+| User		| M:N	| World		 | (User: (0,M), World(0,N))|
+| World		| has	| Quests	 | (World: (1,1), Quest(0,N))|
+| Quest		| has	| QuestTasks	 | (Quest: (1,1), QuestTask(0,N))|
+| QuestTask	| has	| QuestTaskItems | (QuestTask: (1,1), QuestTaskItems(0,N))|
+| Journeys	| of	| User (player)  | (User: (1,1), Journey(0,N))|
+| JourneysTasks | rep.\*| *assoc. table* | (Journey(1,1), QuestTask(0,N), QuestTaskItem(0,N))  |
 
 \* represented by
 
@@ -141,11 +141,19 @@ Moder. = Moderator ~> Lover access level than Admin, higher than player.
 
 ![RELATIONAL MODEL](./dist/img/model-relational_1.png "Relational model")
 
-## 4.4 Data model
-
-![DATA MODEL](./dist/img/model-data.png "Data model")
+## 4.4 Data model(s)
+![DATA MODEL 1](./dist/img/data-1.png "Data model 1")
+![DATA MODEL 2](./dist/img/data-2.png "Data model 2")
 
 ## 4.5 Constraints
+
+This project has several constrainst namely the forbidden NULL values as seen in the relational and conceptual model.
+
+Further more the QuestTask.qt_type can only have following values: 1 ( -explore), 2 ( -do), 3 (-steal), 4 (-sneak), 5 ( -hide)
+
+Journey.j_status can only have values: 1,2,3,4,5,6
+
+User.u_role_str can only be one of the following values: player, moderator, admin
 
 [//]: # (Functional analysis section)
 
@@ -153,13 +161,41 @@ Moder. = Moderator ~> Lover access level than Admin, higher than player.
 
 ## 5.1 Functional dependencies
 
-## 5.2 Raletiona after decomposition and minimalizations
+| | ||
+|:--|:--:|:--|
+|w_id|->|w\_short\_name, w\_fullname|
+|u_id|->|u\_email, u\_password, u\_role\_str, ue\_name, ue\_surname, ue\_level|
+|u_email|->|u\_password, u\_role\_str, ue\_name, ue\_surname, ue\_level|
+|j_id|->|j\_points, j\_points_max|
+|q_id|->|q\_start, q\_stop|
+|qt_id|->|qt\_name, qt\_type, qt\_dificulty |
+|qi_id|->|qi\_name,qi\_data,qi\_evaluation,qi\_uri_image|
+|i_id|->|i_name|
+
+## 5.2 Relations after decomposition and minimalizations
+
+|||
+|:--|:--|
+|R1|(**w_id**, w\_short_name, w\_fullname)|
+|R2|(**u_id**, u\_email, u\_password, u\_role_str, ue\_name, ue\_surname, ue\_level, ue\_nickname)|
+|R3|(**j_id**, j\_points)|
+|R4|(**q_id**, q\_start, q\_end)|
+|R5|(**qt_id**, qt\_name, qt\_type, qt\_dificulty, qt\_uri_data, qt\_uri_image)|
+|R6|(**qi_id**, qi\_name, qi\_data, qi\_evaluation, qi\_uri\_image)|
+|R7|(**i_id**, i\_type, i\_name)
+
 
 ## 5.3 Normal forms
 
-[//]: # (Conclusion section)
+### BCNF
+Model satisfies the BCNF normal form.
 
-# 6 Finalized design
+### 3NF
+Satisfies the less strict form 3NF since it satisfies 1NF and 2NF and on the left side all functional dependencies are either keys or candidate for a key.
+
+## 5.4 BCNF adjustments
+
+for the normal forms the relationship 1:1 between the User and UserDetails is redundant and should be removed by merginig thouse two tables together.
 
 
 
