@@ -1,31 +1,31 @@
-/*1;1;%%%
+/*1;1;5;
  *
  * @name 	Players list
  * @brief	Get list of all players ordered by email address in aplhebetical order.
  *
  * @group	1.1
- * @expected  	%%
+ * @expected  	5
  */
 SELECT 	*
 FROM	[MIC0220].[User]
 WHERE	UPPER(u_role_str) = 'PLAYER'
 ORDER	BY u_email ASC;
 
-/*1;2;%%
+/*1;2;1;
  *
  * @name	List of all journeys
  * @brief	Get all journeys together with % aquired from journey ordered descending
  *		by score.
  *
  * @group	1.2
- * @excepted	%%
+ * @excepted	1
  */
 SELECT 	[j_id]
-     ,	[j_points]/[j_points_max] '%'
+     ,	( CAST( [j_points] AS FLOAT )/CAST( [j_points_max] AS FLOAT ) ) *100 '%'
 FROM	[MIC0220].[Journey]
-ORDER	BY [j_points]/[j_points_max] DESC;
+ORDER	BY ( CAST( [j_points] AS FLOAT )/CAST( [j_points_max] AS FLOAT) ) *100 DESC;
 
-/*1;3;1
+/*1;3;1;
  *
  * @name	Number of worlds in the database
  * 
@@ -53,13 +53,13 @@ FROM	[MIC0220].[Journey];
 --
 
 
-/*2;1;%%
+/*2;1;6
  *
  * @name	Get players with specific letters in password
  * @brief	Gather all players whom's password contains 'l' or 'p'
  *
  * @group	2.1
- * @expected	%%
+ * @expected	6
  */
 SELECT	*
 FROM	[MIC0220].[User]
@@ -67,26 +67,26 @@ WHERE	( [u_password] LIKE '%l%' )
    OR	( [u_password] LIKE '%p%' )
   AND   UPPER([u_role_str]) = 'PLAYER';
 
-/*2;2;%%
+/*2;2;3
  *
  * @name	Get users with password longer then minimal recommended lenght
  * @brief	Get all player with the password containg at least 7 characters.
  *
  * @group	2.2
- * @expected	%%
+ * @expected	3 => [u_id]:5,6,7
  */
 SELECT	*
 FROM	[MIC0220].[User]
 WHERE	LEN( [u_password] ) > 7;
 
 
-/*2;3;%%
+/*2;3;7
  *
  * @name	Get all profitable the qest task items
  * @brief	Get all QuestTaskItems which have higher evaluation then 10 
  *
  * @group	2.3
- * @expected	%%
+ * @expected	7 => [qi_id]:1,5,8,10,11,13,14
  */
 SELECT 	*
 FROM	[MIC0220].[QuestTaskItem]
@@ -98,9 +98,9 @@ WHERE	NOT ( qi_evaluation < 10 );
  * @brief	Get count of the QuestTasks with type 1
  *
  * @group	2.4
- * @expected	1
+ * @expected	1 => "6"
  */
-SELECT	COUNT( * )
+SELECT	COUNT( * ) 'Task with "explore" type'
 FROM	[MIC0220].[QuestTask];
 WHERE	[qt_type] = 1;
 
@@ -112,13 +112,13 @@ WHERE	[qt_type] = 1;
 --
 
 
-/*3;1;%%
+/*3;1;3
  *
  * @name	Get all players using journey master internal mail.
  * @brief	Get all players using jm.com domain mail.
  *
  * @group	3.1
- * @expected	%%
+ * @expected	3 => [u_id]:2,3,7
  */
 SELECT	*
 FROM	[MIC0220].[User]
@@ -126,13 +126,13 @@ WHERE	( [u_email] LIKE '%jm.com' )
    OR	( [u_email] LIKE '%journeymaster.com')
   AND	UPPER( [u_role_str] ) = 'PLAYER';
 
-/*3;2;%%
+/*3;2;3
  *
  * @name	Get all players using journey master internal mail.
  * @brief	Get all players using jm.com or journeymaster.com mails using UNION
  *
  * @group	3.2
- * @expected	%%
+ * @expected	3 => [u_id]:2,3,7
  */
 SELECT	*
 FROM	[MIC0220].[User]
@@ -141,17 +141,18 @@ WHERE	( [u_email] LIKE '%jm.com' )
 
 UNION
 
+SELECT	*
 FROM	[MIC0220].[User]
 WHERE	( [u_email] LIKE '%journeymaster.com' )
   AND   UPPER( [u_role_str] ) = 'PLAYER';
 
-/*3;3;%%
+/*3;3;3
  *
  * @name	Get all the players using journey master internal mail	
  * @brief	Get all the players using jm.com or journeymaster with compound WHERE clouse
  *
  * @group	3.3
- * @expected	%%
+ * @expected	3 => [u_id]:2,3,7
  */
 SELECT	*
 FROM	[MIC0220].[User]
@@ -165,13 +166,13 @@ WHERE	(
 	)
   AND	UPPER( [u_role_str] ) = 'PLAYER';
 
-/*3;4;%%
+/*3;4;3
  *
  * @name	Get all the players using journey master internal mail.
  * @brief	Get all the players using jm.com or j..m...com using EXCEPT closure.
  *
  * @group 	3.4
- * @expected	%%
+ * @expected	3 => [u_id]:2,3,7
  */
 SELECT	*
 FROM	[MIC0220].[User]
@@ -191,37 +192,37 @@ WHERE	( [u_email] NOT LIKE '%jm.com' )
 ---
 --
 
-/*4;1;%%
+/*4;1;3
  *
  * @name	List of types of quest tasks with number of items for each type.	
  *
  * @group	4.1
- * @expected	%%
+ * @expected	3 => [1 => 4], [2 => 1], [3 => 1]
  */
 SELECT	[qt_type]
-     ,	COUNT( * )
+     ,	COUNT( * ) 'count'
 FROM	[MIC0220].[QuestTask]
 GROUP	BY [qt_type];
 
-/*4;2;%%
+/*4;2;5
  *
  * @name	List number of task items for each quest task.
  *
  * @group	4.2
- * @expected	%%
+ * @expected	5 => [qt_id]:1,3,4,5,6
  */
 SELECT	[qt_id]
      ,  COUNT( * )
 FROM	[MIC0220].[QuestTaskItem]
 GROUP	BY [qt_id];
 
-/*4;3;%%
+/*4;3;1
  *
  * @name	List of specific quests and numbers of tasks
  * @brief	List number of tasks of each quest if there are more then 3 in it.
  *
  * @group	4.3
- * @expected	%%
+ * @expected	1 => [q_id]:1
  */
 SELECT	[q_id]
      ,  COUNT( * )
@@ -229,12 +230,12 @@ FROM	[MIC0220].[QuestTask]
 GROUP	BY [q_id]
 HAVING	COUNT( * ) >= 3;
 
-/*4;4;%%
+/*4;4;1
  *
  * @name	Average of the points in consequent journeys
  *
  * @group	4.4
- * @expected	%%	
+ * @expected	1 => [ 1 => 190]	
  */
 SELECT	[j_id]
      ,	AVG( [j_points] )
@@ -247,26 +248,26 @@ GROUP	BY [j_id];
 ---
 --
 
-/*5;1;%%
+/*5;1;4
  *
  * @name	Get all users with details (V1)
  * @brief	Get all users with details using JOIN statement
  *
  * @group	5.1
- * @expected	%%
+ * @expected	4 => [u_id]:1,2,3,4
  */
 SELECT	*
 FROM	[MIC0220].[User]
   JOIN  [MIC0220].[UserDetails]
     ON	[User].[u_id] = [UserDetails].[u_id];
 
-/*5;2;%%
+/*5;2;4
  *
  * @name 	Get all users with details (V2)
  * @brief 	Get all users with details using COMPOUND WHERE clousure.
  *
  * @group	5.2
- * @expected	%%
+ * @expected	4 => [u_id]:1,2,3,4
  */
 SELECT	*
 FROM	[MIC0220].[User] u
@@ -284,18 +285,18 @@ WHERE	u.[u_id]  IN (
 		WHERE	u.[u_id] = u2.[u_id]
 	);
 
-/*5;3;%%
+/*5;3;1
  *
- * @name	Show exam(s) containg most amount of quest task with type 1 (explore)
+ * @name	Show quest(s) containg most amount of quest task with type 1 (explore)
  *
  * @group	5.3
- * @expected	%%
+ * @expected	1
  */
 SELECT	q.[q_id]
 FROM	[MIC0220].[Quest] q
   JOIN	[MIC0220].[QuestTask] t
     ON	q.[q_id] = t.[q_id]
-WHERE	t.[q_type] = 1
+WHERE	t.[qt_type] = 1
 GROUP	BY q.[q_id]
 HAVING	COUNT( * ) >= ALL(
 		SELECT	COUNT( * )
@@ -306,13 +307,13 @@ HAVING	COUNT( * ) >= ALL(
 	);
 
 /*
- *5;4;%%
+ *5;4;1
  *
  * @name	Get average of the 'best' average of all players.
- * @note	Player(s) with the best score is(are) identified by name, surname, email
+ * @note	Player(s) with the best score is(are) identified by name, surname, email, status aka evaluation (1,2,3,4,5,6)
  *
  * @group	5.4
- * @excepted	%%
+ * @excepted	1 => [bobba fet]
  */
 SELECT	 u.[u_email]
      , 	ud.[ue_surname]
@@ -326,7 +327,7 @@ FROM	[MIC0220].[User] u
     ON   u.[u_id] = j.[u_id]
 
 WHERE	 UPPER( u.[u_role_str] ) = 'PLAYER' 
-  AND 	 t.[j_status] >= ALL(
+  AND 	 j.[j_status] >= ALL(
 		SELECT 	AVG( [j_status] ) 
 		FROM 	[MIC0220].[Journey]
 	 )
@@ -345,12 +346,12 @@ GROUP	 BY u.[u_email], ud.[ue_surname], ud.[ue_name];
  * @name	Get list of players best in some journey and the status from the journey 
  *
  * @group	6.1
- * @expected	1
+ * @expected	1 => [bobba]
  */
 SELECT	[u_email]
      , 	[j_status]
 FROM	(
-		SELECT 	u.[u_email], 
+		SELECT 	u.[u_email] 
 		     ,	j.[j_status] 
 		FROM	[MIC0220].[User] u
 		  JOIN  [MIC0220].[Journey] j 
@@ -367,7 +368,7 @@ FROM	(
  *		by at least one player 
  *
  * @group	6.2
- * @expected 	1
+ * @expected 	1 => (3)
  */
 SELECT	[j_id]
      ,  COUNT( * ) 
