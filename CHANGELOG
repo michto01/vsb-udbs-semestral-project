@@ -1,10 +1,21 @@
-On branch master
-Your branch is ahead of 'origin/master' by 1 commit.
-  (use "git push" to publish your local commits)
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-	modified:   CHANGELOG
-
-no changes added to commit (use "git add" and/or "git commit -a")
+* [33m447ecc0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m Changelog
+* [33m6ae0fe4[m dump the sended files
+* [33m48e6c43[m Content separation
+* [33m5079005[m Finnished queries
+* [33mc446516[m Added script for queries
+* [33m0ff7821[m Repair #1 issue, add model calibrations
+* [33m51301b4[m Minor modifications
+* [33md00a4af[m Pdf slides
+* [33mcea8f71[m Changelog
+* [33m108a5e7[m Slides added
+* [33m4429a5b[m Preparing for deployment of the docs
+* [33ma8a7d83[m Linear deps., model repair (') character causing error in data analysis
+* [33ma940d7a[m Changelog
+* [33md781596[m First relational model
+* [33m8f9fdfd[m Relationships modification
+* [33m4cdc116[m Quest items in model added
+* [33m8518827[m Models
+* [33m1503793[m Added changelog entry. Added github mirror.
+* [33mf10ae62[m Added Changelog file to keep track of changes.
+* [33m390d9b3[m Licence to edited ICS
+* [33m548dd62[m Initial Commit 0.1
